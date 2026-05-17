@@ -1,0 +1,172 @@
+/* BODY - GENERAL */
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+    font-family: 'Sniglet', cursive;
+    background-image: url(../img/reticula.svg);
+    background-repeat: repeat;
+    background-color: #7BC9D4;
+    overflow-x: hidden;
+    font-size: 16px;
+    color: #2e2e31;
+  }
+
+  /* Tipografía */
+.sniglet-regular {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.sniglet-extrabold {
+  font-family: "Sniglet", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.btndescarga {
+  background-color: #2e2e31;
+  color: #ffffff;
+}
+
+/* esto debería arreglar que el botón predeterminado de bootstrap no se quede totalmente en negro al hacer click. */
+.btndescarga:hover,
+.btndescarga:active,
+.btndescarga:focus {
+  background-color: #7BC9D4;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+/* Supuestamente esto ayuda al hacer click en el navegador y te lleve bien (en la pantalla) a las secciones */
+#beneficios,
+#review,
+#descarga,
+#banner,
+#secciontres {
+  scroll-margin-top: 160px;
+}
+
+/* SECCIÓN 0 */
+nav {
+    background-color: #ffffff;
+}
+
+
+/* SECCIÓN 1 */
+
+#banner {
+  background-image: url("../img/banner-plantilla.png");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  min-height: 100dvb;
+  display: flex;
+}
+
+.hbanner {
+  color: #ffffff;
+}
+
+.bannertexts {
+  background-color: #7fe1eedc;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* SECCIÓN 1 */
+
+.beneficiosdos {
+  background-color: #ffffffbb;
+  box-sizing: border-box;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+/* SECCIÓN 2 */
+
+.separador {
+  width: 100%;
+  height: auto; /* debería mantener las proporciones */
+  display: block;
+}
+
+.card {
+box-shadow: 0px 4px 10px #00000038;
+}
+
+#review {
+  background-color: #72aff59c;
+}
+
+.avatar {
+  object-fit: cover;
+  border: 4px solid #d57caa;
+  border-radius: 50%;
+}
+
+.web {
+  color: #2f3031;
+  font-style: italic;
+}
+
+/* SECCIÓN 3 */
+.hcta {
+  color: #d57caa;
+}
+
+.cajaform {
+  color: #d57caa;
+}
+
+.descargas {
+  background-color: rgb(255, 255, 255);
+}
+
+.formulario {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 5px solid #d57caa;
+  position: relative;
+}
+
+/* OVERLAY DEL .formulario */
+.overlay-enviado {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.overlay-enviado.activo {
+  display: flex;
+}
+
+.overlay-contenido p {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #2e2e31;
+  color: #ffffff;
+}
+
+.a-color {
+  color: #7BC9D4;
+}
